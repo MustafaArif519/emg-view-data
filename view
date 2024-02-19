@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Name of the virtual environment
+venv_name="env"
+
+# Check if the virtual environment exists
+if [ -d "$venv_name" ]; then
+    # Activate the virtual environment
+    source $venv_name/bin/activate
+
+    # Run the Python script
+    python plot.py
+else
+    # Run the initialization script
+    chmod +x ./initialize
+    ./initialize.sh
+    source $venv_name/bin/activate
+    python plot.py
+fi

@@ -1,0 +1,4 @@
+Run view to view data
+Run initialize to create python virtual environment and install dependencies
+Save data as "emg.out" textfile for python script
+Run 'chmod +x ./{script}' to give that script executing permissions

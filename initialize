@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Name of the virtual environment
+venv_name="env"
+
+# Create the virtual environment
+python3 -m venv $venv_name
+
+# Activate the virtual environment
+source $venv_name/bin/activate
+
+# Install the requirements
+pip install -r requirements.txt
+
+# Print a message to let the user know the process is complete
+echo "Virtual environment setup complete."
